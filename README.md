@@ -1,6 +1,8 @@
 # SafeSwapGlobal MCP Server
 
-[![smithery badge](https://smithery.ai/badge/safeswapglobal/crypto-quote)](https://smithery.ai/servers/safeswapglobal/crypto-quote)
+[![Smithery Badge](https://smithery.ai/badge/safeswapglobal/crypto-quote)](https://smithery.ai/servers/safeswapglobal/crypto-quote)
+
+Official MCP Listing: https://smithery.ai/servers/safeswapglobal/crypto-quote
 
 Official Model Context Protocol (MCP) server for [SafeSwapGlobal](https://safeswapglobal.online) — a stateless, non-custodial cryptocurrency swap directory.
 
