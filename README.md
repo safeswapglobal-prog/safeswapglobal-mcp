@@ -35,15 +35,18 @@ Add this to your `claude_desktop_config.json`:
     }
   }
 }
+```
 ### 2. Cursor / Windsurf
 Add a new MCP server in Cursor Settings:
-Type: SSE / Streamable HTTP
-URL: https://rates.safeswapglobal.online
-Available Tools
-get_swap_quote: Real-time cross-chain floating rates and execution parameters (240+ pairs).
-list_supported_currencies: Complete catalog of 15 supported blockchains and assets.
+
+- **Type:** SSE / Streamable HTTP
+- **URL:** https://rates.safeswapglobal.online
+
+## Available Tools
+
+- **get_swap_quote:** Real-time cross-chain floating rates and execution parameters (240+ pairs).
+- **list_supported_currencies:** Complete catalog of 15 supported blockchains and assets.
 code
-Code
----
+
 ## License
 MIT License.
