@@ -1,0 +1,9 @@
+```json
+{
+  "mcpServers": {
+    "safeswapglobal": {
+      "url": "https://rates.safeswapglobal.online"
+    }
+  }
+}
+```
