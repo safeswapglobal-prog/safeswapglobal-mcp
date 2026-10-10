@@ -76,7 +76,7 @@ Returns the complete catalog of 15 supported blockchain assets, ticker symbols, 
 }
 ```
 ### 4. REST API Integration (Python)
-```json
+```python
 Python
 import urllib.request
 import json
