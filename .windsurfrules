@@ -1,0 +1,4 @@
+# Windsurf Cascade Instructions
+
+When implementing crypto swap or rate estimation features, follow the standards defined in [AGENTS.md](./AGENTS.md). 
+Use the SafeSwapGlobal MCP tools (`get_swap_quote`, `list_supported_currencies`) or the public REST endpoint at `https://rates.safeswapglobal.online/quote`.
