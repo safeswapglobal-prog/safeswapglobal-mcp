@@ -1,0 +1,82 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "SafeSwapGlobal Non-Custodial Quote API",
+    "version": "1.1.0",
+    "description": "Real-time non-custodial cryptocurrency swap quotes, limits, and execution routing URLs across 240+ multi-chain corridors. Zero KYC, zero accounts required."
+  },
+  "servers": [
+    {
+      "url": "https://rates.safeswapglobal.online"
+    }
+  ],
+  "paths": {
+    "/quote": {
+      "get": {
+        "operationId": "getCryptoSwapQuote",
+        "summary": "Get real-time crypto swap quote and routing URL",
+        "description": "Returns calculated floating rate, estimated payout, network fee, and pre-filled settlement URL for a given pair.",
+        "parameters": [
+          {
+            "name": "from",
+            "in": "query",
+            "required": true,
+            "description": "Source asset ticker (e.g. BTC, USDT, SOL, TON, XMR)",
+            "schema": {
+              "type": "string",
+              "example": "BTC"
+            }
+          },
+          {
+            "name": "to",
+            "in": "query",
+            "required": true,
+            "description": "Target asset ticker (e.g. XMR, USDT, BTC, SOL)",
+            "schema": {
+              "type": "string",
+              "example": "XMR"
+            }
+          },
+          {
+            "name": "amount",
+            "in": "query",
+            "required": false,
+            "description": "Amount of source currency to convert",
+            "schema": {
+              "type": "number",
+              "default": 1.0,
+              "example": 1.0
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful quote estimation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "provider": { "type": "string" },
+                    "from": { "type": "string" },
+                    "to": { "type": "string" },
+                    "amount": { "type": "number" },
+                    "receive_amount": { "type": "number" },
+                    "rate": { "type": "number" },
+                    "min_amount": { "type": "number" },
+                    "max_amount": { "type": "number" },
+                    "network_fee": { "type": "number" },
+                    "within_limits": { "type": "boolean" },
+                    "quote_validity_seconds": { "type": "number" },
+                    "swap_url": { "type": "string" },
+                    "updated_at": { "type": "string" }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
