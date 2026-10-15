@@ -1,6 +1,6 @@
 # SafeSwapGlobal MCP Server
 
-[![Smithery](https://smithery.ai/badge/safeswapglobal/crypto-quote)](https://smithery.ai/servers/safeswapglobal/crypto-quote)
+[![safeswapglobal-prog/safeswapglobal-mcp MCP server](https://glama.ai/mcp/servers/safeswapglobal-prog/safeswapglobal-mcp/badges/score.svg)](https://glama.ai/mcp/servers/safeswapglobal-prog/safeswapglobal-mcp)
 [![SafeSwapGlobal Crypto Swap Quotes MCP connector – tool definition quality and endpoint health on Glama](https://glama.ai/mcp/connectors/online.safeswapglobal.rates/safe-swap-global-crypto-swap-quotes/badges/score.svg)](https://glama.ai/mcp/connectors/online.safeswapglobal.rates/safe-swap-global-crypto-swap-quotes)
 
 Official Model Context Protocol (MCP) server for [SafeSwapGlobal](https://safeswapglobal.online) — an independent, non-custodial cryptocurrency swap directory.
