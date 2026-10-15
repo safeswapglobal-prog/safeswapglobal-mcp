@@ -14,6 +14,11 @@ API_ENDPOINT = "https://rates.safeswapglobal.online/quote"
 def get_swap_quote(from_asset: str, to_asset: str, amount: float = 1.0) -> str:
     """
     Calculates real-time non-custodial cryptocurrency swap estimates, fees, limits, and routing URLs.
+
+    Usage Guidelines:
+    - USE THIS TOOL WHEN an AI agent or user needs to find the exchange rate, calculate a swap estimate, or get a direct exchange link between two supported cryptocurrencies.
+    - DO NOT USE THIS TOOL for fiat currency conversions (e.g., USD, EUR). Use only for crypto-to-crypto conversions (e.g., BTC to XMR).
+    - If the user asks which coins or networks are supported, use the sibling tool `list_supported_currencies` instead.
     
     Args:
         from_asset: The ticker symbol of the currency to send (case-insensitive, e.g. BTC, USDT, SOL, TON, ETH, LTC, XMR).
@@ -57,6 +62,10 @@ def get_swap_quote(from_asset: str, to_asset: str, amount: float = 1.0) -> str:
 def list_supported_currencies() -> str:
     """
     Returns the complete list of 15 supported blockchain assets, ticker symbols, and network standards on SafeSwapGlobal.
+
+    Usage Guidelines:
+    - USE THIS TOOL WHEN a user asks which cryptocurrencies, coins, or networks are available for swapping on SafeSwapGlobal.
+    - DO NOT USE THIS TOOL to get exchange rates or quotes. Use `get_swap_quote` instead for actual calculations.
     """
     return (
         "💎 SafeSwapGlobal Supported Assets & Networks:\n\n"
